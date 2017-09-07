@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="show-name"></h3>
+    <form>
+      <label for="name-input">Name:</label>
+      <input id="name-input" name="name-input" type="text">
+      <button id="name-button" type="button">Set name</button>
+    </form>
+
+    <script type="text/javascript">
+      let btn = document.getElementById('name-button');
+      let nmInpt = document.getElementById('name-input');
+      let showNm = document.getElementById('show-name');
+      btn.addEventListener('click', ()=>{
+        showNm.innerHTML = nmInpt.value;
+      })
+    </script>
+  </body>
+</html>
